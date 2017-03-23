@@ -52,6 +52,7 @@ function producto(){
 
     }
     document.getElementById('caja').value = '';
+    document.getElementById('caja').value = producto;
 
 }
 
@@ -59,7 +60,7 @@ function division(){
     //var operador = document.getElementById('suma');
 
     var valorCajita = document.getElementById('caja').value;
-    var div = 1;
+    var div = 0;
     if(arreglo[0] == undefined){
         arreglo[0] = valorCajita;
         console.log(arreglo);
@@ -74,7 +75,7 @@ function division(){
 
     }
     document.getElementById('caja').value = '';
-    document.getElementById('caja')=div;
+    document.getElementById('caja').value = div;
 
 }
 
@@ -82,14 +83,14 @@ function restar(){
     //var operador = document.getElementById('suma');
 
     var valorCajita = document.getElementById('caja').value;
-    var resta= 1;
+    var resta= 0;
     if(arreglo[0] == undefined){
         arreglo[0] = valorCajita;
         console.log(arreglo);
     }else{
         arreglo[1] = valorCajita;
         console.log(arreglo);
-        resta = parseInt(arreglo[0]) * parseInt(arreglo[1]);
+        resta = parseInt(arreglo[0]) - parseInt(arreglo[1]);
         arreglo[0] = resta;
         console.log(resta);
         // arreglo=[];
